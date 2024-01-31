@@ -1,0 +1,149 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color:#F2f2f2;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 15px 15px;
+}
+
+#title{
+    margin: 0;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+header ul a{
+    display: flex;
+    text-decoration: none;
+    color: #585E65;
+    transition: all 0.3s;
+}
+
+header ul a:hover{
+    color: black;
+    font-weight: bolder;
+}
+
+.button_promocao{
+    display: flex;
+    background-color: #4C6EF5;
+    color: #ffffff;
+    align-items: center; /*Errado, pois não é um pai de elementos*/
+    justify-content: center; /*Errado, pois não é um pai de elementos*/
+    text-align: center;
+    text-decoration: none; 
+    border-radius: 4px;
+    width: 145px; /*Sempre utilizar medidas relativas*/
+    height: 40px; /*Sempre utilizar medidas relativas*/
+    transition: all 0.3s;
+}
+
+.button_promocao:hover{
+    color: black;
+    font-weight: bolder;
+}
+
+main ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main ul li{
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px;
+    width: 224px;
+    height: 300px;
+    gap: 10px;
+    flex-direction: column; /*Row -> Quando itens serão organizados "em linha"/horizontalmente, Column quando "vão ficar um em cima do outro"/Verticalmente. */
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+main ul li img{
+    width: 130px;
+    margin: 0 auto;
+}
+
+main ul li h4{
+    margin: 0;
+}
+
+
+.open{
+    background-color: #4C6EF5;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 34px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.open:hover{
+    cursor: pointer;
+    font-weight: bolder;
+    color: black;
+}
+   
+@media (max-width: 768px){
+    header{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        gap: 12px;
+    }
+
+    header div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    header ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        row-gap: 10px;
+    }
+
+}
